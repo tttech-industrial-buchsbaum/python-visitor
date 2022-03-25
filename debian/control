@@ -1,0 +1,25 @@
+Source: python-visitor
+Maintainer: Helmut Buchsbaum <helmut.buchsbaum@opensource.tttech-industrial.com>
+Section: python
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+ python3-pytest <!nocheck>
+Standards-Version: 4.5.1
+Homepage: https://github.com/mbr/visitor
+Vcs-Git: https://github.com/tttech-industrial-buchsbaum/python-visitor.git
+Vcs-Browser: https://github.com/tttech-industrial-buchsbaum/python-visitor
+Testsuite: autopkgtest-pkg-python
+Rules-Requires-Root: no
+
+Package: python3-visitor
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Tiny pythonic visitor implementation -- Python 3 module
+ A tiny library to facilitate visitor. In fact, it is so small, you may just
+ be better off copy and pasting the source straight into your project...
+ .
+ This package provides the Python 3 module.
